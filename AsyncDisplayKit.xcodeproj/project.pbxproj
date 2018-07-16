@@ -2746,7 +2746,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = Source/AsyncDisplayKit.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_CFLAGS = "-Wundef";
+				OTHER_CFLAGS = (
+					"-Wundef",
+					"-fno-exceptions",
+					"-fno-objc-arc-exceptions",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AsyncDisplayKit;
 				SKIP_INSTALL = YES;
@@ -2775,7 +2779,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = Source/AsyncDisplayKit.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_CFLAGS = "-Wundef";
+				OTHER_CFLAGS = (
+					"-Wundef",
+					"-fno-exceptions",
+					"-fno-objc-arc-exceptions",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AsyncDisplayKit;
 				SKIP_INSTALL = YES;
@@ -2889,7 +2897,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = Source/AsyncDisplayKit.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_CFLAGS = "-Wundef";
+				OTHER_CFLAGS = (
+					"-Wundef",
+					"-fno-exceptions",
+					"-fno-objc-arc-exceptions",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AsyncDisplayKit;
 				SKIP_INSTALL = YES;
